@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Javascript Testfeld</title>
+</head>
+<div class="container">
+    <body>
+        <p id="demo">Hallo Welt!</p>
+        <button type="button" onclick="change()">Change</button>
+        <!--calculator-->
+        <div class="calculator">
+            <h1>Taschenrechner</h1>
+            <p id ="task"></p>
+            <p id ="operand"></p>
+            <p id="result"></p>
+            <button onclick="calculatorReset()">Zurücksetzen</button>
+            <table>
+                <tr>
+                    <td>
+                        <button onclick="concat('7')">7</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('8')">8</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('9')">9</button>
+                    </td>
+                    <td>
+                        <button onclick="plus()">+</button>
+                    </td>
+                    <td>
+                        <button onclick="minus()">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="concat('4')">4</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('5')">5</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('6')">6</button>
+                    </td>
+                    <td>
+                        <button onclick="times()">*</button>
+                    </td>
+                    <td>
+                        <button onclick="divide()">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="concat('1')">1</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('2')">2</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('3')">3</button>
+                    </td>
+                    <td>
+                        <button onclick="concat('0')">0</button>
+                    </td>
+                    <td>
+                        <button onclick="calculate()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--tictactoe-->
+        <div id="tictactoe">
+            <h1>TicTacToe</h1>
+            <p id="display"></p>
+            <button onclick="tictactoeReset()">Zurücksetzen</button>
+            <table>
+                <tr>
+                    <td id="00" onclick="setField(this.id)"></td>
+                    <td id="01" onclick="setField(this.id)"></td>
+                    <td id="02" onclick="setField(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id="10" onclick="setField(this.id)"></td>
+                    <td id="11" onclick="setField(this.id)"></td>
+                    <td id="12" onclick="setField(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id="20" onclick="setField(this.id)"></td>
+                    <td id="21" onclick="setField(this.id)"></td>
+                    <td id="22" onclick="setField(this.id)"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</div>
+</html>

@@ -1,0 +1,30 @@
+.container{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+#task{
+    border-bottom:2px black dotted;
+}
+#result{
+    border: 1px black solid;
+}
+.calculator{
+    background-color: bisque;
+    font-size: large;
+}
+.calculator table{
+    width: 30px;
+    height: 30px;
+}
+#tictactoe table tr td{
+    border: 2px solid;
+    border-color: black;
+    text-align: center;
+    font-size: 50pt;
+}
+#tictactoe table{
+    width: 300px;
+    height: 300px;
+}
