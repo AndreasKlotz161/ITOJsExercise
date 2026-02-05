@@ -22,7 +22,10 @@
     border: 2px solid;
     border-color: black;
     text-align: center;
-    font-size: 50pt;
+    font-size: 20pt;
+    padding: 0;
+    width: 100px;
+    height: 100px;
 }
 #tictactoe table{
     width: 300px;

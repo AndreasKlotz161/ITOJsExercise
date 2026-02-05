@@ -94,6 +94,7 @@ function setField(field){
     if (grid[parseInt(field[0])][parseInt(field[1])] == 0){
         if (player1 == true){
             document.getElementById(field).style.backgroundColor = `red`;
+            document.getElementById(field).innerHTML = `<span>X</span>`;
             grid[parseInt(field[0])][parseInt(field[1])] = 1;
             document.getElementById("display").style.color = `green`;
             document.getElementById("display").innerHTML = `Grün ist dran`;
@@ -102,6 +103,7 @@ function setField(field){
         }
         else {
             document.getElementById(field).style.backgroundColor = `green`;
+            document.getElementById(field).innerHTML = `<span>O</span>`;
             grid[parseInt(field[0])][parseInt(field[1])] = 2;
             document.getElementById("display").style.color = `red`;
             document.getElementById("display").innerHTML = `Rot ist dran`;
